@@ -1,0 +1,80 @@
+
+nav, div, section, article, footer {
+  border: black 1px solid;
+}
+
+nav {
+  background: lightsalmon;
+}
+
+div {
+  background: orchid;
+}
+
+section {
+  background: palegreen;
+}
+
+section:last-of-type {
+  background: purple;
+}
+
+article:first-of-type {
+  background: blanchedalmond;
+}
+
+article:nth-last-of-type(2) {
+  background: chartreuse;
+}
+
+article:nth-last-of-type(3){
+  background: crimson;
+}
+
+article:last-of-type {
+  background: cyan;
+}
+
+footer {
+  background: darkorange;
+}
+
+@media only screen and (min-width: 768px) {
+
+  nav {
+    background: lightseagreen;
+  }
+
+  div {
+    background: limegreen;
+  }
+
+  section {
+    background: magenta;
+  }
+
+  section:last-of-type {
+    background: maroon;
+  }
+
+  article:first-of-type {
+    background: midnightblue;
+  }
+
+  article:nth-last-of-type(2) {
+    background: peru;
+  }
+
+  article:nth-last-of-type(3){
+    background: rebeccapurple;
+  }
+
+  article:last-of-type {
+    background: seagreen;
+  }
+
+  footer {
+    background: thistle;
+  }
+
+}
