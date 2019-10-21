@@ -2,6 +2,12 @@
 body {
   max-width: 767px;
   margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+header {
+  width: 100%;
 }
 
 nav, div, section, article, footer {
@@ -15,10 +21,16 @@ nav {
   line-height: 75px;
 }
 
-div {
+div:first-of-type {
   width: 100%;
   height: 150px;
   line-height: 150px;
+}
+
+div:last-of-type {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 section {
@@ -28,14 +40,18 @@ section {
 }
 
 article {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+article > p {
   width: 50%;
   height: 250px;
   line-height: 250px;
-  float: left;
 }
 
 footer {
-  clear: both;
   width: 100%;
   height: 80px;
   line-height: 80px;
@@ -59,33 +75,33 @@ footer {
     line-height: 100px;
   }
 
-  div {
-    float: left;
+  div:first-of-type {
     width: 20.833333333333%;
     height: 600px;
     line-height: 600px;
   }
 
+  div:last-of-type {
+    width: 79.166666666667%;
+    display: flex;
+
+  }
+
   section {
-    width: 39.583333333333%;
+    width: 50%;
     height: 200px;
     line-height: 200px;
-    float: left;
   }
   
-  article {
-    width: 19.791666666666%;
+  article > p{
+    width: 25%;
     height: 250px;
     line-height: 250px;
-    float: left;
   }
   
   footer {
-    width: 79.1666666666667%;
     height: 150px;
     line-height: 150px;
-    float: right;
-    clear: none;
   }
   
 }
